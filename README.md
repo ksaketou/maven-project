@@ -19,11 +19,11 @@ mvn package
 The target folder has now been created automatically with all the generated files. For the creation of the diagram, execute
 
 ```
-java -jar gradeshistogram/target/gradeshistogram-0.0.1-SNAPSHOT-jar-with-dependecies.jar [input file absolut path]
+java -jar gradeshistogram/target/gradeshistogram-0.0.1-SNAPSHOT-jar-with-dependencies.jar [input file absolut path]
 ```
 
 If you want to execute the jar file with the `grades.txt` file as an input simply run
 
 ```
-java -jar gradeshistogram/target/gradeshistogram-0.0.1-SNAPSHOT-jar-with-dependecies.jar gradeshistogram\src\main\resources\grades.txt
+java -jar gradeshistogram/target/gradeshistogram-0.0.1-SNAPSHOT-jar-with-dependencies.jar gradeshistogram\src\main\resources\grades.txt
 ```
