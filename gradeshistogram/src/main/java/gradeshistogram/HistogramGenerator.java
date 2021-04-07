@@ -28,6 +28,8 @@ public class HistogramGenerator {
 	 * This function reads the file with the grades and returns an array of integers
 	 * containing the grades from the file.
 	 * 
+	 * @param file the input .txt file containing the grades
+	 * 
 	 * @return array of grades
 	 */
 	public int[] read_grades(String file) {
