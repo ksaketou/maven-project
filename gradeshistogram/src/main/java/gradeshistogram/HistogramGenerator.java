@@ -21,6 +21,7 @@ import org.jfree.data.xy.XYSeriesCollection;
  * an integer array. Then, it presents those grades in a histogram form using
  * JFreeChart library.
  * 
+ * @author Konstantina Saketou 
  */
 public class HistogramGenerator {
 
