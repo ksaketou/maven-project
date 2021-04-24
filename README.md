@@ -1,4 +1,4 @@
-# Lab Assignment 2
+# Lab Assignment - Software Engeeniring [![Build Status](https://travis-ci.com/ksaketou/maven-project.svg?token=SAbjwsyqTgTceG3agqdc&branch=main)](https://travis-ci.com/ksaketou/maven-project)
 This repository was created in terms of the Software Engineering in Practice class and contains a Maven project written in Java. 
 
 The assignment aims to the better understanding of Build Automation Tools and to the familiarization with Maven.
