@@ -6,9 +6,7 @@ branches:
  only:
  - main
  - development
-install:
- - sudo apt install maven –y # Install required packages
-script: # Build the project
+script:
  - mvn clean package
-after_success: # Notify users about the result
+after_success:
  - echo Process terminated successfully
