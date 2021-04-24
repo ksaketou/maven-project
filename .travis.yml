@@ -1,0 +1,14 @@
+language: java 
+jdk:
+ - openjdk11
+ - oraclejdk11
+branches:
+ only:
+ - main
+ - development
+install:
+ - sudo apt install maven –y # Install required packages
+script: # Build the project
+ - mvn clean package
+after_success: # Notify users about the result
+ - echo Process terminated successfully
