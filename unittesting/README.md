@@ -1,4 +1,4 @@
-### Lab Assignment 3 - Part 1
+# Lab Assignment 3 - Part 1
 
 This is a Maven child Module about JUnit and Continuous Integration and is part of
 the 3rd Lab Assignment of the Software Engineering course.
