@@ -27,3 +27,5 @@ If you want to execute the jar file with the `grades.txt` file as an input simpl
 ```
 java -jar gradeshistogram/target/gradeshistogram-0.0.1-SNAPSHOT-jar-with-dependencies.jar gradeshistogram\src\main\resources\grades.txt
 ```
+## Unit Testing Module
+[Details](https://github.com/ksaketou/maven-project/tree/development/unittesting/README.md) about the module regarding Unit Testing and Continuous Integration.
