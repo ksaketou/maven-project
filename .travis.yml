@@ -7,6 +7,6 @@ branches:
  - main
  - development
 script:
- - mvn clean package
+ - mvn clean package jacoco:report
 after_success:
  - echo Process terminated successfully
