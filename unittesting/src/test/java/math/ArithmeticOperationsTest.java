@@ -15,13 +15,8 @@ import org.junit.rules.ExpectedException;
  */
 public class ArithmeticOperationsTest {
 
-	/**
-	 * Test methods for {
-	 * 	@link math.ArithmeticOperations#divide(double, double)
-	 * }.
-	 */
 	@Test (expected = ArithmeticException.class)
-	public void test_divide_with_zero() { //test division with zero
+	public void testDivide_with_zero() { //test division with zero
 		System.out.println("Attempting to divide when denominator is zero.");
 		ArithmeticOperations obj = new ArithmeticOperations();
 		obj.divide(10, 0);
@@ -29,22 +24,17 @@ public class ArithmeticOperationsTest {
 	}
 	
 	@Test
-	public void test_divide_normal() {
+	public void testDivide_normal() {
 		System.out.println("Performing accepted division.");
 		ArithmeticOperations obj = new ArithmeticOperations();
 		assert 10/2 == obj.divide(10, 2) : "Division failed.";
 	}
 
-	/**
-	 * Test method for {
-	 *	 @link math.ArithmeticOperations#multiply(int, int)
-	 * }.
-	 */
 	@Rule
 	public ExpectedException thrown = ExpectedException.none();
 	
 	@Test
-	public void test_multiply_negative() { //multiplication of negative integers
+	public void testMultiply_negative() { //multiplication of negative integers
 		ArithmeticOperations obj = new ArithmeticOperations();
 		System.out.println("Attempting to perform multiplication with negative integers.");
 		thrown.expectMessage("x & y should be >= 0");
@@ -52,7 +42,7 @@ public class ArithmeticOperationsTest {
 	}
 	
 	@Test
-	public void test_multiply_big_numbers() { //multiplication of big integers
+	public void testMultiply_big_numbers() { //multiplication of big integers
 		ArithmeticOperations obj = new ArithmeticOperations();
 		System.out.println("Attempting to perform multiplication with big numbers.");
 		thrown.expectMessage("The product does not fit in an Integer variable");
@@ -60,7 +50,7 @@ public class ArithmeticOperationsTest {
 	}
 	
 	@Test
-	public void test_multiply_normal() {
+	public void testMultiply_normal() {
 		ArithmeticOperations obj = new ArithmeticOperations();
 		System.out.println("Attempting to perform multiplication with accepted numbers.");
 		assert 2*5 == obj.multiply(5, 2) : "Multiplication failed.";
