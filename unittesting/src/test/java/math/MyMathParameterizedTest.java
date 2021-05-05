@@ -37,7 +37,7 @@ public class MyMathParameterizedTest {
 	   }
 	
 	@Test
-	public void test_factorial() {
+	public void testFactorial() {
 		System.out.println("Calculating factorial of "+ n +".");
 		MyMath math = new MyMath();
 		assert resultExpected == math.factorial(n);
