@@ -1,4 +1,6 @@
-# Lab Assignment - Software Engineering [![Build Status](https://travis-ci.com/ksaketou/maven-project.svg?token=SAbjwsyqTgTceG3agqdc&branch=development)](https://travis-ci.com/ksaketou/maven-project) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# Lab Assignment - Software Engineering
+[![Build Status](https://travis-ci.com/ksaketou/maven-project.svg?token=SAbjwsyqTgTceG3agqdc&branch=development)](https://travis-ci.com/ksaketou/maven-project) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 This repository was created in terms of the Software Engineering in Practice class and contains a Maven project written in Java. 
 
 The assignment aims to the better understanding of Build Automation Tools and to the familiarization with Maven.
