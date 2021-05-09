@@ -40,6 +40,14 @@ public class ArithmeticOperationsTest {
 		thrown.expectMessage("x & y should be >= 0");
 		obj.multiply(-5, 2);
 	}
+
+	@Test
+	public void testMultiply_negative2() { //multiplication of negative integers
+		ArithmeticOperations obj = new ArithmeticOperations();
+		System.out.println("Attempting to perform multiplication with negative integers.");
+		thrown.expectMessage("x & y should be >= 0");
+		obj.multiply(5, -2);
+	}
 	
 	@Test
 	public void testMultiply_big_numbers() { //multiplication of big integers
