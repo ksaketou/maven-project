@@ -59,5 +59,17 @@ public class MyMathTest {
 		thrown.expectMessage("Input number must be greater or equal to 2.");
 		m.isPrime(-1);
 	}
+	
+	@Test
+	public void testIsPrime_incorrect2() {
+		MyMath m = new MyMath();
+		assert true == m.isPrime(2);
+	}
+	
+	@Test
+	public void testIsPrime_incorrect3() {
+		MyMath m = new MyMath();
+		assert false == m.isPrime(81);
+	}
 
 }

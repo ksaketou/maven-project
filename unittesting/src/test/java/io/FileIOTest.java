@@ -26,7 +26,6 @@ public class FileIOTest {
 	
 	@Rule
 	public ExpectedException thrown = ExpectedException.none();
-	
 	@Test
 	public void testReadFile_incorrect1() {
 		String path = "src/test/resources/testFileEmpty.txt";
@@ -53,8 +52,15 @@ public class FileIOTest {
 		FileIO f = new FileIO();
 		assert (f.readFile(file.getAbsolutePath())).getClass().isArray() == true;
 	}
-	
 
+	public void testReadFile_incorrect3(){
+
+		String path = "src/test/resources/readFileException.txt";
+		File file = new File(path);
+		FileIO f = new FileIO();
+		thrown.expectMessage("Sorry, something went wrong.");
+		f.readFile(file.getAbsolutePath());
+	}
 	
 
 }
