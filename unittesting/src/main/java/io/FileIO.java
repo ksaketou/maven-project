@@ -45,7 +45,7 @@ public class FileIO {
 		    line.close();
 	
 		} catch(Exception e) {
-			  throw new RuntimeException("Sorry, something went wrong.");
+			  System.out.println("Sorry, something went wrong.");
 		}
 		  
 		if (numbersList.size() == 0) { 
