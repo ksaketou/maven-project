@@ -38,7 +38,7 @@ public class ArithmeticOperationsTest {
 		ArithmeticOperations obj = new ArithmeticOperations();
 		System.out.println("Attempting to perform multiplication with negative integers.");
 		thrown.expectMessage("x & y should be >= 0");
-		obj.multiply(-5, -2);
+		obj.multiply(-5, 2);
 	}
 	
 	@Test
