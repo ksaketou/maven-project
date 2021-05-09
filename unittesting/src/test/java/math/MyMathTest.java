@@ -72,4 +72,10 @@ public class MyMathTest {
 		assert false == m.isPrime(81);
 	}
 
+	@Test
+	public void testIsPrime_incorrect4() {
+		MyMath m = new MyMath();
+		assert false == m.isPrime(25);
+	}
+
 }
