@@ -64,4 +64,11 @@ public class ArithmeticOperationsTest {
 		assert 2*5 == obj.multiply(5, 2) : "Multiplication failed.";
 	}
 
+	@Test
+	public void testMultiply_zero() {
+		ArithmeticOperations obj = new ArithmeticOperations();
+		System.out.println("Attempting to perform multiplication with accepted numbers.");
+		assert 0 == obj.multiply(5, 0) : "Multiplication failed.";
+	}
+
 }
