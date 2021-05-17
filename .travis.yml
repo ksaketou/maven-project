@@ -1,0 +1,12 @@
+language: java 
+jdk:
+ - openjdk11
+ - oraclejdk11
+branches:
+ only:
+ - main
+ - development
+script:
+ - mvn clean package jacoco:report
+after_success:
+ - echo Process terminated successfully

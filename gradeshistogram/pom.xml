@@ -3,7 +3,7 @@
   <parent>
     <groupId>gr.aueb.dmst.ksaketou</groupId>
     <artifactId>ase2021_practical_assignments</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.3-SNAPSHOT</version>
   </parent>
   <artifactId>gradeshistogram</artifactId>
   <name>gradeshistogram</name>
