@@ -7,10 +7,9 @@
     	<artifactId>ase2021_practical_assignments</artifactId>
     	<version>0.0.3-SNAPSHOT</version>
   	</parent>
-	
-	<groupId>gr.aueb.gkortzis</groupId>
+
 	<artifactId>sourcecodeanalyzer</artifactId>
-	<name>Design Patterns</name>
+	<name>sourcecodeanalyzer</name>
 	<description>This module contains the code base that will serve as the starting point for the design pattern assignment</description>
 
 	<properties>
