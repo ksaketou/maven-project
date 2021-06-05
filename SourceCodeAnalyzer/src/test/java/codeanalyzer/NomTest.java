@@ -27,6 +27,12 @@ public class NomTest {
 		Nom nom = new Nom();
 		assertEquals(3, nom.calculate(TEST_CLASS, TYPE_STRCOMP, SOURCE_LOC));
 	}
+
+	@Test
+	public void testCalculateInvalid() throws IOException {
+		Nom nom = new Nom();
+		assertEquals(-1, nom.calculate(TEST_CLASS, "wrong", SOURCE_LOC));
+	}
 	
 
 	

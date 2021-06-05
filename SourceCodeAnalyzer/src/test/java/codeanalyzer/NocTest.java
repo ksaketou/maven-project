@@ -28,4 +28,10 @@ public class NocTest {
 		Noc noc = new Noc();
 		assertEquals(3, noc.calculate(TEST_CLASS, TYPE_STRCOMP, SOURCE_LOC));
 	}
+
+	@Test
+	public void testCalculateInvalid() throws IOException {
+		Noc noc = new Noc();
+		assertEquals(-1, noc.calculate(TEST_CLASS, "wrong", SOURCE_LOC));
+	}
 }

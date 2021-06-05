@@ -29,4 +29,10 @@ public class LocTest {
 		assertEquals(7, loc.calculate(TEST_CLASS, TYPE_STRCOMP, SOURCE_LOC));
 	}
 
+	@Test
+	public void testCalculateInvalid() throws IOException {
+		Loc loc = new Loc();
+		assertEquals(-1, loc.calculate(TEST_CLASS, "wrong", SOURCE_LOC));
+	}
+
 }
