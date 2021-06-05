@@ -17,7 +17,7 @@ public class DemoClient {
 		String sourceFileLocation = "local";
 		String outputFilePath = "output_metrics";
 		String outputFileType = "csv";
-
+		boolean execute = true;
 		if(args.length == 5) {
 			filepath = args[0];
 			sourceCodeAnalyzerType = args[1];
@@ -26,11 +26,14 @@ public class DemoClient {
 			outputFileType = args[4];
 		} else if (args.length != 0) {
 			System.out.println("Incorrect number of arguments.");
-			System.exit(1);
+			execute = false;
+			//System.exit();
 		}
-
-		ExecuteMetrics exec = new ExecuteMetrics();
-		exec.getMetrics(outputFileType, filepath, sourceCodeAnalyzerType, outputFilePath, sourceFileLocation);
+		if (execute) {
+			ExecuteMetrics exec = new ExecuteMetrics();
+			exec.getMetrics(outputFileType, filepath, sourceCodeAnalyzerType, 
+				outputFilePath, sourceFileLocation);
+		}
 	}
 
 }
