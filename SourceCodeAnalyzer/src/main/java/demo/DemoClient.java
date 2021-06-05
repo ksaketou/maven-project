@@ -27,7 +27,6 @@ public class DemoClient {
 		} else if (args.length != 0) {
 			System.out.println("Incorrect number of arguments.");
 			execute = false;
-			//System.exit();
 		}
 		if (execute) {
 			ExecuteMetrics exec = new ExecuteMetrics();
