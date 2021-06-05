@@ -3,10 +3,11 @@ package codeanalyzer;
 import java.util.Map;
 
 /**
-*  This is the context class which uses the MetricsExporter strategy.
-* 
-* @author Konstantina Saketou
-*/
+ * This is the context class which implements the 
+ * MetricsExporter interface functionality.
+ * 
+ * @author Konstantina Saketou
+ */
 public class GenerateMetrics {
     private MetricsExporter MetricsExporter;
  

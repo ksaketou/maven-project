@@ -15,7 +15,7 @@ public class ExecuteMetrics {
 
 	/**
 	 * This method returns the calculated metrics into the requested format.
-	 * It uses the MetricsExporter strategy and context objects to
+	 * It uses the MetricsExporter functionality and context objects to
  	 * implement every supported functionality of the different exporters.
 
 	 * @param exp_type output file type [csv|json]
