@@ -70,4 +70,4 @@ The classes participating here are:
 
 * `GenerateMetrics` class which is the context class for the supported functionality. It contains the `generateFile` method in order to activate the supported functionality. This method uses the `calculate` method.
 
-* `ExecuteMetrics` class which uses the `generateFile` method with the corresponding inputs each time in order to export tha output data.
+* `ExecuteMetrics` class which uses the `generateFile` method with the corresponding inputs each time in order to export the output data.
