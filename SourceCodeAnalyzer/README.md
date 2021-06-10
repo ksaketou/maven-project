@@ -77,3 +77,5 @@ The classes participating here are:
 This is the final structure of the classes in a form of a class diagram.
 
 ![ ](https://github.com/ksaketou/maven-project/blob/development/SourceCodeAnalyzer/media/classDiagram.png)
+
+The image can be found [here](https://github.com/ksaketou/maven-project/blob/development/SourceCodeAnalyzer/media/classDiagram.png)
