@@ -71,3 +71,9 @@ The classes participating here are:
 * `GenerateMetrics` class which is the context class for the supported functionality. It contains the `generateFile` method in order to activate the supported functionality. This method uses the `calculate` method.
 
 * `ExecuteMetrics` class which uses the `generateFile` method with the corresponding inputs each time in order to export the output data.
+
+### Class Diagram
+
+This is the final structure of the classes in a form of a class diagram.
+
+![ ](https://github.com/ksaketou/maven-project/blob/development/SourceCodeAnalyzer/media/classDiagram.png)
