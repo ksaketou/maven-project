@@ -6,7 +6,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 /**
- *  This is a test class for the Nom clas.
+ *  This is a test class for the Nom class.
  * 
  * @author Konstantina Saketou
  */

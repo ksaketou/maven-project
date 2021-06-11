@@ -11,7 +11,11 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-
+/**
+ * This is a test class for the DemoClient class.
+ * 
+ * @author Konstantina Saketou
+ */
 public class DemoClientTest {
     private final PrintStream standardOut = System.out;
 	private final ByteArrayOutputStream outputStreamCaptor = new ByteArrayOutputStream();
