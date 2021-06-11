@@ -34,7 +34,7 @@ This module uses the **Strategy** Pattern. This pattern was used here in order t
 
 The classes participating here are:
 
-* `SourceFileReader` interface contaiing the `readFile` method.
+* `SourceFileReader` interface containing the `readFile` method.
 
 * `ReadFileIntoList` class which uses the `readFile` method in order to read the given file and return it inside a list.
 
@@ -48,11 +48,13 @@ The classes participating here are:
 
 * `SourceCodeAnalyzer` interface which contains the `calculate` method for the calculation of each metric.
 
-* `Loc` class which calculates the loc metric (= lines of code) using the `calculate` method. This method uses the `readFile` method.
+* `Loc` class which calculates the loc metric (= lines of code) using the `calculate` method.
 
-* `Noc` class which calculates the noc metric (= number of classes) using the `calculate` method. This method uses the `readFile` method.
+* `Noc` class which calculates the noc metric (= number of classes) using the `calculate` method.
 
-* `Nom` class which calculates the nom metric (= number of methods) using the `calculate` method. This method uses the `readFile` method.
+* `Nom` class which calculates the nom metric (= number of methods) using the `calculate` method.
+
+The above classes use the `readFile` method in order to read the input code. Thus, based on the analyzer type that the user inserts, this method is called from either the `ReadFileIntoList` or the `ReadFileIntoString` class.
 
 ### Metrics Exporter
 
@@ -70,7 +72,7 @@ The classes participating here are:
 
 * `GenerateMetrics` class which is the context class for the supported functionality. It contains the `generateFile` method in order to activate the supported functionality. This method uses the `calculate` method.
 
-* `ExecuteMetrics` class which uses the `generateFile` method with the corresponding inputs each time in order to export the output data.
+* `ExecuteMetrics` class which contains the `getMetrics` method. This method uses the `generateFile` method with the corresponding inputs each time in order to export the output data. Moreover, the `calculate` method of the classes `Nom`, `Noc` or `Loc` is also called for the calculation of each metric.
 
 ### Class Diagram
 
@@ -78,4 +80,4 @@ This is the final structure of the classes in a form of a class diagram.
 
 ![ ](https://github.com/ksaketou/maven-project/blob/development/SourceCodeAnalyzer/media/classDiagram.png)
 
-The image can be found [here](https://github.com/ksaketou/maven-project/blob/development/SourceCodeAnalyzer/media/classDiagram.png)
+The diagram can be found [here](https://github.com/ksaketou/maven-project/blob/development/SourceCodeAnalyzer/media/classDiagram.png).
