@@ -70,7 +70,7 @@ The classes participating here are:
 
 * `NullExporter` class  which prints out an error message in case the user inserts an unknown exporter type. This class is a result of the **Null object** Pattern. By using this pattern, we eliminate exception handling on `DemoClient` class.
 
-* `GenerateMetrics` class which is the context class for the supported functionality. It contains the `generateFile` method in order to activate the supported functionality. This method uses the `calculate` method.
+* `GenerateMetrics` class which is the context class for the supported functionality. It contains the `generateFile` method in order to activate the supported functionality.
 
 * `ExecuteMetrics` class which contains the `getMetrics` method. This method uses the `generateFile` method with the corresponding inputs each time in order to export the output data. Moreover, the `calculate` method of the classes `Nom`, `Noc` or `Loc` is also called for the calculation of each metric.
 
