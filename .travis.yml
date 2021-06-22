@@ -1,12 +1,14 @@
 language: java 
 jdk:
  - openjdk11
- - oraclejdk11
 branches:
  only:
  - main
  - development
 script:
  - mvn clean package jacoco:report
+after_script:
+ - cd SourceCodeAnalyzer/target
+ - java -jar .\sourcecodeanalyzer-0.0.3-SNAPSHOT-jar-with-dependencies.jar ../src/main/resources/TestClass.java regex local output_bonus csv
 after_success:
  - echo Process terminated successfully
